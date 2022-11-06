@@ -10,20 +10,18 @@ def outcomes(user_input, computer_input):
     
     if user_input == 'rock' and computer_input == 'scissors':
         user_score += 1
-        print('You Won!')
-        return True
+        print('You Won!')  
     elif user_input == 'paper' and computer_input == 'rock':
         user_score += 1
         print('You Won!')
-        return True
     elif user_input == 'scissors' and computer_input == 'paper':
         user_score += 1
         print('You Won!')
-        return True
     else:
         computer_score += 1
         print('You Lost!')
-        return True
+
+    return True
     
 while True:
     user_pick = input('Enter Rock/Paper/Scissors or enter Q to quit: ').lower()
